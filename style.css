@@ -1,64 +1,59 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
   }
 
   body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #050505;
+    margin: 20px;
+    background-color: #f0f4f8;
   }
   .form-container {
-    background: white;
+    max-width: 600px;
+    margin: auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
-  input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    background: #ffffff;
   }
-  .password-container {
-    position: relative;
-  }
-  .password-container input {
-    padding-right: 9px;
-  }
-  .toggle-password {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  button {
+  .form-container input,
+  .form-container textarea,
+  .form-container select,
+  .form-container button {
     width: 100%;
+    margin: 10px 0;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-container button {
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
   }
-  button:hover {
+  .form-container button:hover {
     background-color: #0056b3;
   }
-  .link {
-    text-align: center;
-    margin-top: 10px;
+  .form-container .gender-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
   }
-  .link a {
-    color: #007bff;
-    text-decoration: none;
+  .form-container .gender-options label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
   }
-  .link a:hover {
-    text-decoration: underline;
+  .form-container .gender-options input[type="radio"] {
+    margin-right: 5px;
+  }
+  .form-container .form-group {
+    margin-bottom: 20px;
+  }
+  .form-container label {
+    font-weight: bold;
+  }
+  select {
+    width: 100%;
   }
